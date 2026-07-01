@@ -1,0 +1,71 @@
+/* CSS document */
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    color: rgb(45, 45, 45);
+    line-height: 140%;
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: rgb(166, 166, 176);
+    color: rgb(245, 245, 245);
+    font-size: 3em;
+    padding: 2rem 2rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    background-color: rgb(166, 166, 176);
+    color: rgb(245, 245, 245);
+    font-size: 2.3em;
+    padding: 0 2rem 2rem;
+    font-family: serif;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 3.5rem 2rem 2rem;
+    padding-top: 0.7rem;
+    font-size: 1.9em;
+    color: rgb(160, 55, 48);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-top: 0.2rem solid rgb(160, 55, 48);
+}
+
+h4 {
+    font-weight: bold;
+}
+
+p.description {
+    font-style: italic;
+}
+
+p.price {
+    color: rgb(160, 55, 48);
+}
+
+ul {
+    margin: 0 2rem 0;
+}
+
+li {
+    margin: 0 0 2rem;
+    list-style-type: none;
+}
