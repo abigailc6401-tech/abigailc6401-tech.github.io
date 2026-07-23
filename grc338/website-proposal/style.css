@@ -1,0 +1,44 @@
+.container {
+    max-width: 52rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 1.5rem;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+section h1 {
+    margin-bottom: 1.25rem;
+}
+
+/* Menu category headings */
+.menu-content h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.65rem;
+    line-height: 1.2;
+}
+
+/* Individual drink names */
+.menu-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+/* Drink descriptions */
+.menu-content h3 + p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+nav ul {
+    padding-left: 1.25rem;
+}
