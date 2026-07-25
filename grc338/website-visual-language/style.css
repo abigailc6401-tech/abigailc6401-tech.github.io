@@ -28,8 +28,8 @@ address {
 }
 
 body {
-    background: #f7f5f0;
-    color: #2e2924;
+    background: #ffffff;
+    color: #333333;
     font-family: "source-sans-3", sans-serif;
     line-height: 1.6;
 }
@@ -37,6 +37,7 @@ body {
 .container {
     max-width: 80rem;
     margin: auto;
+    background: #ffffff;
 }
 
 img {
@@ -64,22 +65,23 @@ nav li {
 
 nav a {
     display: inline-block;
-    color: #2e2924;
+    color: #333333;
     text-decoration: none;
     font-family: "tt-nooks", serif;
     text-transform: uppercase;
     letter-spacing: .05em;
     padding-bottom: .2rem;
+    transition: color .25s ease;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #52692b;
+    color: #52692B;
 }
 
 .selected a {
-    color: #52692b;
-    border-bottom: 2px solid #52692b;
+    color: #52692B;
+    border-bottom: 2px solid #52692B;
 }
 
 main {
@@ -99,17 +101,20 @@ h4 {
 }
 
 h2 {
+    color: #333333;
     font-size: 2.75rem;
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h3 {
-    color: #52692b;
+    color: #52692B;
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
 h4 {
+    color: #333333;
     font-size: 1.1rem;
     margin-bottom: .25rem;
 }
@@ -133,19 +138,20 @@ p {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 1.4rem;
-    background: #52692b;
-    color: white;
+    background: #52692B;
+    color: #ffffff;
     text-decoration: none;
     font-family: "tt-nooks", serif;
+    transition: .25s;
 }
 
 .button:hover {
-    background: #415522;
+    background: #405220;
 }
 
 .location-note {
     margin-top: 1rem;
-    color: #52692b;
+    color: #52692B;
     font-family: "tt-nooks", serif;
 }
 
@@ -204,7 +210,7 @@ p {
 }
 
 .price {
-    color: #52692b;
+    color: #52692B;
     font-weight: 600;
 }
 
@@ -234,8 +240,10 @@ address {
     font-style: normal;
 }
 
+/* ---------- FOOTER ---------- */
+
 footer {
-    border-top: 1px solid #d9d6cf;
+    border-top: 1px solid #d0d0d0;
     text-align: center;
     padding: 2rem 1.5rem;
     font-size: .95rem;
@@ -308,8 +316,6 @@ footer p {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
     }
-
-    /* Menu */
 
     .menu figure {
         width: 14rem;
