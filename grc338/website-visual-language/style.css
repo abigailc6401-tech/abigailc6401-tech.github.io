@@ -1,0 +1,265 @@
+/* CSS DOCUMENT */
+
+html,
+body,
+div,
+header,
+nav,
+main,
+section,
+article,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a,
+img,
+address {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f5f0;
+    color: #2e2924;
+    font-family: "source-sans-3", sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 80rem;
+    margin: auto;
+    background: #f7f5f0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    padding: 1.5rem;
+}
+
+.logo img {
+    width: 12rem;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+nav li {
+    margin-bottom: .75rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e2924;
+    font-family: "tt-nooks", serif;
+    font-size: 1rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    transition: color .25s ease;
+}
+
+nav a:hover {
+    color: #52692b;
+}
+
+.selected a {
+    color: #52692b;
+}
+
+main {
+    padding: 0 1.5rem 4rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "tt-nooks", serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #2e2924;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #52692b;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
+}
+
+p {
+    max-width: 38rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 1.4rem;
+    background: #52692b;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "tt-nooks", serif;
+    transition: .25s;
+}
+
+.button:hover {
+    background: #415522;
+}
+
+.location-note {
+    margin-top: 1rem;
+    color: #52692b;
+    font-family: "tt-nooks", serif;
+}
+
+.about-values {
+    max-width: 42rem;
+}
+
+.menu-intro {
+    margin-bottom: 2rem;
+}
+
+.menu section {
+    margin-bottom: 5rem;
+}
+
+.menu figure {
+    margin-bottom: 1.5rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 1.75rem;
+}
+
+.description {
+    margin-bottom: .25rem;
+}
+
+.price {
+    color: #52692b;
+    font-weight: 600;
+}
+
+.location-information article {
+    margin-bottom: 2rem;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    border-top: 1px solid #d9d6cf;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: .95rem;
+}
+
+footer p {
+    max-width: none;
+    margin-bottom: .4rem;
+}
+
+@media screen and (min-width: 60em) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 0 0 2rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .about-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .location-intro {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .location-information {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .menu section {
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    .menu figure {
+        margin: 0;
+    }
+
+    .menu ul {
+        columns: 2;
+        column-gap: 3rem;
+    }
+
+    .menu li {
+        break-inside: avoid;
+    }
+
+}
