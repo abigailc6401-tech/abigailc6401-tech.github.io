@@ -202,6 +202,12 @@ h1 {
   height: 560px;
 }
 
+.feature-image-boba {
+  object-fit: contain;
+  background: var(--card);
+  padding: 12px;
+}
+
 .card-copy {
   padding: 14px 0 6px;
 }
@@ -214,23 +220,6 @@ h1 {
 .meta {
   color: var(--muted);
   font-size: 0.88rem;
-}
-
-.image-placeholder {
-  min-height: 340px;
-  background:
-    linear-gradient(135deg, rgba(139, 79, 61, 0.10), transparent),
-    var(--card);
-  border: 1px solid var(--line);
-  display: grid;
-  place-items: center;
-  color: var(--muted);
-  text-align: center;
-  padding: 24px;
-}
-
-.feature-card:first-child .image-placeholder {
-  min-height: 560px;
 }
 
 .project-grid {
@@ -247,6 +236,18 @@ h1 {
   border: 1px solid var(--line);
 }
 
+.project-image-contain {
+  object-fit: contain;
+  background: var(--card);
+  padding: 12px;
+}
+
+.project-image-vertical {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: var(--card);
+}
+
 .project-card:nth-child(3n) {
   grid-column: 1 / -1;
 }
@@ -255,13 +256,10 @@ h1 {
   aspect-ratio: 16 / 8;
 }
 
-.project-card .image-placeholder {
-  aspect-ratio: 4 / 3;
-  min-height: 0;
-}
-
-.project-card:nth-child(3n) .image-placeholder {
-  aspect-ratio: 16 / 8;
+.project-card:nth-child(3n) .project-image-vertical {
+  aspect-ratio: 3 / 4;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .tags {
@@ -281,23 +279,37 @@ h1 {
   margin-bottom: 32px;
 }
 
-.art-card .image-placeholder {
-  min-height: 0;
-  aspect-ratio: 4 / 5;
-}
-
-.art-card:nth-child(2n) .image-placeholder {
-  aspect-ratio: 1 / 1;
-}
-
-.art-card:nth-child(3n) .image-placeholder {
-  aspect-ratio: 3 / 4;
-}
-
 .art-image {
   width: 100%;
   height: auto;
   border: 1px solid var(--line);
+}
+
+.journalism-section {
+  padding: 64px 0 84px;
+  border-top: 1px solid var(--line);
+}
+
+.journalism-section .section-heading {
+  margin-bottom: 12px;
+}
+
+.journalism-intro {
+  max-width: 650px;
+  margin-bottom: 32px;
+  color: var(--muted);
+}
+
+.journalism-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.journalism-grid .art-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .about-layout {
@@ -360,7 +372,8 @@ footer {
   .hero,
   .feature-grid,
   .about-layout,
-  .project-grid {
+  .project-grid,
+  .journalism-grid {
     grid-template-columns: 1fr;
   }
 
@@ -374,10 +387,6 @@ footer {
     height: 360px;
   }
 
-  .feature-card:first-child .image-placeholder {
-    min-height: 360px;
-  }
-
   .project-card:nth-child(3n) {
     grid-column: auto;
   }
@@ -387,8 +396,10 @@ footer {
     aspect-ratio: 4 / 3;
   }
 
-  .project-card:nth-child(3n) .image-placeholder {
-    aspect-ratio: 4 / 3;
+  .project-image-vertical,
+  .project-card:nth-child(3n) .project-image-vertical {
+    aspect-ratio: 3 / 4;
+    max-width: 100%;
   }
 
   .skills-grid {
