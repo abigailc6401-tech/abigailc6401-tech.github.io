@@ -313,13 +313,13 @@ h1 {
 }
 
 .photo-grid {
-  columns: 3 280px;
-  column-gap: 18px;
+  columns: 4 200px;
+  column-gap: 12px;
   padding-bottom: 84px;
 }
 
 .photo-card {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   break-inside: avoid;
 }
 
@@ -380,7 +380,6 @@ footer {
 }
 
 @media (max-width: 800px) {
-
   .nav {
     align-items: flex-start;
     padding: 18px 0;
@@ -427,7 +426,12 @@ footer {
   }
 
   .photo-grid {
-    columns: 2 220px;
+    columns: 3 160px;
+    column-gap: 10px;
+  }
+
+  .photo-card {
+    margin-bottom: 10px;
   }
 
   .skills-grid {
@@ -436,9 +440,12 @@ footer {
 }
 
 @media (max-width: 520px) {
-
   .photo-grid {
-    columns: 1;
+    columns: 2;
+    column-gap: 8px;
   }
 
+  .photo-card {
+    margin-bottom: 8px;
+  }
 }
