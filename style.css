@@ -68,11 +68,11 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   flex-wrap: wrap;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
 }
 
 .nav-links a.active {
@@ -312,6 +312,24 @@ h1 {
   object-fit: contain;
 }
 
+.photo-grid {
+  columns: 3 280px;
+  column-gap: 18px;
+  padding-bottom: 84px;
+}
+
+.photo-card {
+  margin: 0 0 18px;
+  break-inside: avoid;
+}
+
+.photo-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+}
+
 .about-layout {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -362,11 +380,17 @@ footer {
 }
 
 @media (max-width: 800px) {
+
   .nav {
     align-items: flex-start;
     padding: 18px 0;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .nav-links {
+    gap: 12px 18px;
+    font-size: 0.8rem;
   }
 
   .hero,
@@ -402,7 +426,19 @@ footer {
     max-width: 100%;
   }
 
+  .photo-grid {
+    columns: 2 220px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 520px) {
+
+  .photo-grid {
+    columns: 1;
+  }
+
 }
